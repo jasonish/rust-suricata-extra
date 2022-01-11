@@ -1,0 +1,13 @@
+[package]
+name = "suricata_client"
+version = "0.1.0-alpha.2"
+edition = "2018"
+license = "MIT"
+description = "Suricata socket control library"
+homepage = "https://github.com/jasonish/rust-suricata-extra"
+repository = "https://github.com/jasonish/rust-suricata-extra"
+
+[dependencies]
+serde = { version = "1.0.132", features = ["derive"] }
+serde_json = { version = "1.0.73", features = ["preserve_order"] }
+thiserror = "1"

@@ -1,0 +1,18 @@
+[package]
+name = "suricatasc"
+version = "0.1.0-alpha.2"
+edition = "2018"
+license = "GPL-2.0-only"
+description = "Suricata socket control program"
+readme = "README.md"
+homepage = "https://github.com/jasonish/rust-suricata-extra"
+repository = "https://github.com/jasonish/rust-suricata-extra"
+
+[dependencies]
+getopts = "0.2.21"
+rustyline = "9.1.2"
+rustyline-derive = "0.6.0"
+serde = { version = "1.0.132", features = ["derive"] }
+serde_json = { version = "1.0.73", features = ["preserve_order"] }
+thiserror = "1.0.30"
+suricata_client = { path = "../suricata-client", version = "0.1.0-alpha" }
